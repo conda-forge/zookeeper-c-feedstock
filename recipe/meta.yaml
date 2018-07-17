@@ -1,7 +1,7 @@
 # General artefact name, as this is only the C library, the conda package is suffixed with "-c"
 {% set name = "zookeeper" %}
-{% set version = "3.4.12" %}
-{% set sha256 = "c686f9319050565b58e642149cb9e4c9cc8c7207aacc2cb70c5c0672849594b9" %}
+{% set version = "3.4.13" %}
+{% set sha256 = "7ced798e41d2027784b8fd55c908605ad5bd94a742d5dab2506be8f94770594d" %}
 
 package:
   name: {{ name|lower }}-c
@@ -13,7 +13,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: True  # [win]
 
 requirements:
