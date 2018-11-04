@@ -5,6 +5,8 @@ set -x
 
 pushd src/c
 
+sed -i -- 's/-Werror//g' Makefile.in
+
 ./configure --with-pic --prefix=$PREFIX
 
 make -j${CPU_COUNT}
