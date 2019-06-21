@@ -3,7 +3,7 @@
 set -e
 set -x
 
-pushd src/c
+pushd zookeeper-client/zookeeper-client-c
 
 sed -i -- 's/-Werror//g' Makefile.in
 
